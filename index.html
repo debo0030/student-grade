@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Final Assignment - Andrea de Boer</title>
+</head>
+<body>
+  <main>
+    <form name="gradeForm" action="get-data.py" method="post" onsubmit="return validateForm();">
+          <h3>Student Grade Form</h3>
+          <p>Please enter your information</p>
+        <table>
+          <tr>
+            <td class="block">First Name:</td>
+            <td class="block"><input type="text" placeholder="First Name" id="fName" name="firstName">
+            <span id="fNameWarning" class="alert"></span>
+            </td>
+          </tr>
+          <tr>
+            <td class="block">Last Name:</td>
+            <td class="block"><input type="text" placeholder="Last Name" id="lName" name="lastName">
+            <span id="lNameWarning" class="alert"></span>
+            </td>
+          </tr>
+          <tr>
+            <td class="block">Course:</td>
+            <td class="block">
+              <select name="course" id="course">
+              <option value="">Select Course</option>
+              <option value="8001">8001</option>
+              <option value="8209">8209</option>
+              <option value="8260">8260</option>
+              <option value="8279">8279</option>
+              <option value="8300">8300</option>
+              <option value="9013">9013</option>
+              </select>
+              <span id="courseWarning" class="alert"></span>
+            </td>
+          </tr>
+          <tr>
+            <td class="block">Work Type:</td>
+            <td class="block">
+              <select name="workType" id="workType">
+              <option value="">Select Work Type</option>
+              <option value="1">Assignments</option>
+              <option value="2">Midterms</option>
+              <option value="3">Final Exam</option>
+              </select>
+              <span id="typeWarning" class="alert"></span>
+            </td>
+          </tr>
+          <tr>
+              <td class="block">Grades:</td>
+              <td class="block" id="instruction">Separate each grade with a comma.</td>
+              <td class="block"><input type="text" pattern="[0-9]+[, 0-9]*" placeholder="Grades" id="enterGrades" name="enterGrades">
+              <span id="gradeWarning" class="alert"></span>
+              </td>
+          </tr>
+          <tr>
+            <td class="box"><input type="submit" value="Save" id="submitButton" class="button"></td>
+            <td class="box"><a href="displayResults.py" class="button">Display Results</a></td>
+          </tr>
+          <script src="scripts/validate.js"></script> 
+          <script src="scripts/events.js"></script>
+        </table>
+    </form>
+  </main>
+</body>
+</html>

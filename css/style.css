@@ -1,0 +1,112 @@
+/*********************
+colours:
+white, black, #23B263;
+**********************/
+
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-size: 16px;
+  font-family: Righteous, sans-serif;
+}
+
+.alert {
+  font-size: 13px;
+  display: block;
+  padding-top: 3px;
+  color: #A82010;
+}
+
+.button {
+  background-color: #23B263;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  float: left;
+}
+
+.button:hover {
+  box-shadow: 1px 1px 3px #000;
+}
+
+.button: active,
+.button: visited {
+  background-color: #136136;
+}
+
+.block {
+  display: block;
+  border: none;
+}
+
+.box {
+  border: none;
+}
+
+h3{
+  font-size: 1.75rem;
+  margin: 0;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+p {
+  margin: 0;
+  text-align: center;
+}
+
+form {
+  width: 50%;
+  height: auto;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-top: 20px solid #23B263;
+  border-bottom: 20px solid #23B263;
+  border-left: 3px solid #23B263;
+  border-right: 3px solid #23B263;
+  box-shadow: 2px 4px 20px black;
+  border-radius: 10px;
+  color: black;
+}
+
+table {
+  margin: 1rem auto;
+  width: 90%;
+  border-collapse: collapse;
+}
+
+th {
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  background-color: #23B263;
+  border: 2px solid white;
+  color: #ebe9ee;
+  text-shadow: 1px 1px 1px black;
+}
+
+td {
+  color: black;
+  background-color: white;
+  text-align: left;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+#instruction {
+  font-size: 0.75rem;
+}
+
+#returnlink {
+  float: right;
+  margin: 0 3rem;
+}
